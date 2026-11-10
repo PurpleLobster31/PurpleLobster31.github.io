@@ -1,0 +1,48 @@
+---
+layout: post
+title: "Como um jogo moderno conseguiu fazer tanto com apenas duas cores?"
+date: 2026-11-09
+categories: [coursework, tools]
+tags: [github, jekyll, markdown, computer-graphics, dithering, games]
+author: Matheus Mendonça Lopes
+---
+
+## Um jogo moderno com gráficos de 1987?
+
+Recentemente, encontrei um jogo chamado **Return of the Obra Dinn**, desenvolvido por Lucas Pope, que me chamou bastante a atenção por sua estética visual.
+
+O jogo possui gráficos tridimensionais, mas utiliza uma estética inspirada em computadores antigos, com imagens monocromáticas e uma quantidade extremamente limitada de informações por pixel.
+
+Isso me fez pensar em como seria possível representar cenários, personagens, iluminação e profundidade utilizando uma quantidade tão limitada de informações visuais.
+
+[Conheça o jogo Return of the Obra Dinn](https://obradinn.com/)
+
+## Mas como isso funciona?
+
+Uma das técnicas utilizadas para criar esse tipo de resultado visual é chamada de **Dithering**.
+
+Basicamente, o dithering consiste em distribuir pixels de cores diferentes em determinados padrões para criar a ilusão de tonalidades intermediárias.
+
+Por exemplo, ao alternar pequenos pontos pretos e brancos, nossos olhos podem interpretar aquela região como um tom de cinza, mesmo que cada pixel individual possua apenas duas possibilidades: preto ou branco.
+
+Isso é especialmente interessante quando pensamos na representação de imagens com apenas 1 bit por pixel, onde cada pixel pode assumir somente dois valores possíveis.
+
+## Onde entra a Computação Visual?
+
+No caso de Return of the Obra Dinn, o desenvolvedor utiliza uma estética inspirada em imagens de 1 bit, combinando renderização tridimensional com técnicas de conversão e dithering.
+
+Dessa forma, mesmo com uma limitação tão grande na representação final, é possível preservar informações importantes sobre iluminação, sombras e profundidade.
+
+Uma curiosidade é que essa técnica também exige alguns cuidados durante a movimentação da câmera, pois a distribuição dos pixels pode gerar ruídos e alterações visuais desconfortáveis quando os objetos se movimentam.
+
+Achei muito interessante perceber que uma limitação aparentemente simples acabou se tornando uma das principais características visuais do jogo.
+
+## Para quem quiser conhecer mais
+
+Encontrei um artigo bastante interessante no PlayStation Blog, no qual o próprio desenvolvedor explica algumas das decisões por trás da identidade visual do jogo:
+
+[Return of the Obra Dinn: Adventures in One-Bit Out Tomorrow](https://blog.playstation.com/2019/10/17/return-of-the-obra-dinn-adventures-in-one-bit-out-tomorrow/)
+
+É curioso pensar que, mesmo com toda a evolução das placas de vídeo e das tecnologias de renderização, ainda existem situações em que trabalhar com menos informações visuais pode produzir resultados extremamente interessantes.
+
+Muito legal descobrir que algo tão simples quanto a distribuição de pixels pode mudar completamente a identidade visual de um jogo!
